@@ -1,0 +1,74 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ResponseStatus = void 0;
+var ResponseStatus;
+(function (ResponseStatus) {
+    // Informational responses
+    ResponseStatus[ResponseStatus["CONTINUE"] = 100] = "CONTINUE";
+    ResponseStatus[ResponseStatus["SWICHING_PROTOCOL"] = 101] = "SWICHING_PROTOCOL";
+    ResponseStatus[ResponseStatus["PROCESSING"] = 102] = "PROCESSING";
+    ResponseStatus[ResponseStatus["EARLY_HINTS"] = 103] = "EARLY_HINTS";
+    // Successful responses
+    ResponseStatus[ResponseStatus["OK"] = 200] = "OK";
+    ResponseStatus[ResponseStatus["CREATED"] = 201] = "CREATED";
+    ResponseStatus[ResponseStatus["ACCEPTED"] = 202] = "ACCEPTED";
+    ResponseStatus[ResponseStatus["NON_AUTHORITATIVE_INFORMATION"] = 203] = "NON_AUTHORITATIVE_INFORMATION";
+    ResponseStatus[ResponseStatus["NO_CONTENT"] = 204] = "NO_CONTENT";
+    ResponseStatus[ResponseStatus["RESET_CONTENT"] = 205] = "RESET_CONTENT";
+    ResponseStatus[ResponseStatus["PARTIAL_CONTENT"] = 206] = "PARTIAL_CONTENT";
+    ResponseStatus[ResponseStatus["MULTI_STATUS"] = 207] = "MULTI_STATUS";
+    ResponseStatus[ResponseStatus["ALREADY_REPORTED"] = 208] = "ALREADY_REPORTED";
+    ResponseStatus[ResponseStatus["IM_USED"] = 226] = "IM_USED";
+    // Redirection messages
+    ResponseStatus[ResponseStatus["MULTIPLE_CHOICES"] = 300] = "MULTIPLE_CHOICES";
+    ResponseStatus[ResponseStatus["MOVED_PERMANENTLY"] = 301] = "MOVED_PERMANENTLY";
+    ResponseStatus[ResponseStatus["FOUND"] = 302] = "FOUND";
+    ResponseStatus[ResponseStatus["SEE_OTHER"] = 303] = "SEE_OTHER";
+    ResponseStatus[ResponseStatus["NOT_MODIFIED"] = 304] = "NOT_MODIFIED";
+    ResponseStatus[ResponseStatus["USE_PROXY"] = 305] = "USE_PROXY";
+    ResponseStatus[ResponseStatus["UNUSED"] = 306] = "UNUSED";
+    ResponseStatus[ResponseStatus["TEMPORARY_REDIRECT"] = 307] = "TEMPORARY_REDIRECT";
+    ResponseStatus[ResponseStatus["PERMANENT_REDIRECT"] = 308] = "PERMANENT_REDIRECT";
+    // Client error responses
+    ResponseStatus[ResponseStatus["BAD_REQUEST"] = 400] = "BAD_REQUEST";
+    ResponseStatus[ResponseStatus["UNAUTHORIZED"] = 401] = "UNAUTHORIZED";
+    ResponseStatus[ResponseStatus["PAYMENT_REQUIRED"] = 402] = "PAYMENT_REQUIRED";
+    ResponseStatus[ResponseStatus["FORBIDDEN"] = 403] = "FORBIDDEN";
+    ResponseStatus[ResponseStatus["NOT_FOUND"] = 404] = "NOT_FOUND";
+    ResponseStatus[ResponseStatus["METHOD_NOT_ALLOWED"] = 405] = "METHOD_NOT_ALLOWED";
+    ResponseStatus[ResponseStatus["NOT_ACCEPTABLE"] = 406] = "NOT_ACCEPTABLE";
+    ResponseStatus[ResponseStatus["PROXY_AUTHENTICATION_REQUIRED"] = 407] = "PROXY_AUTHENTICATION_REQUIRED";
+    ResponseStatus[ResponseStatus["REQUEST_TIMEOUT"] = 408] = "REQUEST_TIMEOUT";
+    ResponseStatus[ResponseStatus["CONFLICT"] = 409] = "CONFLICT";
+    ResponseStatus[ResponseStatus["GONE"] = 410] = "GONE";
+    ResponseStatus[ResponseStatus["LENGTH_REQUIRED"] = 411] = "LENGTH_REQUIRED";
+    ResponseStatus[ResponseStatus["PRECONDITION_FAILED"] = 412] = "PRECONDITION_FAILED";
+    ResponseStatus[ResponseStatus["PAYLOAD_TOO_LARGE"] = 413] = "PAYLOAD_TOO_LARGE";
+    ResponseStatus[ResponseStatus["URI_TOO_LONG"] = 414] = "URI_TOO_LONG";
+    ResponseStatus[ResponseStatus["UNSUPPORTED_MEDIA_TYPE"] = 415] = "UNSUPPORTED_MEDIA_TYPE";
+    ResponseStatus[ResponseStatus["RANGE_NOT_SATISFIABLE"] = 416] = "RANGE_NOT_SATISFIABLE";
+    ResponseStatus[ResponseStatus["EXPECTATION_FAILED"] = 417] = "EXPECTATION_FAILED";
+    ResponseStatus[ResponseStatus["TEAPOT"] = 418] = "TEAPOT";
+    ResponseStatus[ResponseStatus["MISDIRECTED_REQUEST"] = 421] = "MISDIRECTED_REQUEST";
+    ResponseStatus[ResponseStatus["UNPROCESSABLE_CONTENT"] = 422] = "UNPROCESSABLE_CONTENT";
+    ResponseStatus[ResponseStatus["LOCKED"] = 423] = "LOCKED";
+    ResponseStatus[ResponseStatus["FAILED_DEPENDENCY"] = 424] = "FAILED_DEPENDENCY";
+    ResponseStatus[ResponseStatus["TOO_EARLY"] = 425] = "TOO_EARLY";
+    ResponseStatus[ResponseStatus["UPGRADE_REQUIRED"] = 426] = "UPGRADE_REQUIRED";
+    ResponseStatus[ResponseStatus["PRECONDITION_REQUIRED"] = 428] = "PRECONDITION_REQUIRED";
+    ResponseStatus[ResponseStatus["TOO_MANY_REQUESTS"] = 429] = "TOO_MANY_REQUESTS";
+    ResponseStatus[ResponseStatus["REQUEST_HEADER_FIELDS_TOO_LARGE"] = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE";
+    ResponseStatus[ResponseStatus["UNAVAILABLE_FOR_LEGAL_REASONS"] = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS";
+    // Server error responses
+    ResponseStatus[ResponseStatus["INTERNAL_SERVER_ERROR"] = 500] = "INTERNAL_SERVER_ERROR";
+    ResponseStatus[ResponseStatus["NOT_IMPLEMENTED"] = 501] = "NOT_IMPLEMENTED";
+    ResponseStatus[ResponseStatus["BAD_GATEWAY"] = 502] = "BAD_GATEWAY";
+    ResponseStatus[ResponseStatus["SERVICE_UNAVAILABLE"] = 503] = "SERVICE_UNAVAILABLE";
+    ResponseStatus[ResponseStatus["GATEWAY_TIMEOUT"] = 504] = "GATEWAY_TIMEOUT";
+    ResponseStatus[ResponseStatus["HTTP_VERSION_NOT_SUPPORTED"] = 505] = "HTTP_VERSION_NOT_SUPPORTED";
+    ResponseStatus[ResponseStatus["VARIANT_ALSO_NEGOTIATES"] = 506] = "VARIANT_ALSO_NEGOTIATES";
+    ResponseStatus[ResponseStatus["INSUFFICIENT_STORAGE"] = 507] = "INSUFFICIENT_STORAGE";
+    ResponseStatus[ResponseStatus["LOOP_DETECTED"] = 508] = "LOOP_DETECTED";
+    ResponseStatus[ResponseStatus["NOT_EXTENDED"] = 510] = "NOT_EXTENDED";
+    ResponseStatus[ResponseStatus["NETWORK_AUTHENTICATION_REQUIRED"] = 511] = "NETWORK_AUTHENTICATION_REQUIRED";
+})(ResponseStatus || (exports.ResponseStatus = ResponseStatus = {}));
